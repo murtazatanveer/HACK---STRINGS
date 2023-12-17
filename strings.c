@@ -42,5 +42,42 @@ replaceChar(str , oldChar, newChar);
 
 }
 
+// QUESTION NO : 2
+
+if (choice==2){
+    
+int s;
+printf("\nHow many characters you want in your string : ");
+scanf("%d",&s);
+
+getchar();
+
+int size = s+1;
+
+char str[size];
+char oldChar;
+char newChar;
+
+printf("\nEnter Your String : ");
+scanf("%s",&str);
+
+getchar();
+
+printf("\nEnter Character you want to remove : ");
+scanf("%c",&oldChar);
+
+getchar();
+
+printf("\nEnter Character you want to Place : ");
+scanf("%c",&newChar);
+
+char new_arr[size];
+
+
+replaceCharCopy(str , oldChar, newChar);
+
+}
+
+
 
 }

@@ -1,12 +1,10 @@
 #include<stdio.h>
 
 /* Q:1 */ void replaceChar(char *s, char oldChar, char newChar);
+/* Q:2 */ char * replaceCharCopy(char *s, char oldChar, char newChar);
 
 
-
-
-
-
+// QUESTION NO : 1
 
 void replaceChar(char *s, char oldChar, char newChar){
 
@@ -33,6 +31,11 @@ while ( ch != (s+1) ){
 
 }
 
+// QUESTION NO : 2
+
+}
+
+char * replaceCharCopy(char *s, char oldChar, char newChar){
 
 
 }
