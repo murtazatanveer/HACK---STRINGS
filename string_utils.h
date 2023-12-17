@@ -60,19 +60,38 @@ while(*s!='\0'){
 
 void removeChar(char *s, char c){
 
-int count;
+int count=0;
+char *ptr=s;
+
+char *p;
 
 while(*s!='\0'){
 
 if(*s==c){
 
-count++;
+*s=*(s+1);
+p=s+1;
+
+while( *p != '\0'){
+
+*p = *(p+1);
+p++;
 
 }
 
 }
 
+s++;
+}
 
+printf("\nAfter removing %c we get : ",c);
+
+while(*ptr!='\0'){
+
+printf("%c",*ptr);
+ptr++;
+
+}
 
 
 }
