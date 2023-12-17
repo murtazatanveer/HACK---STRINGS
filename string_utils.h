@@ -2,7 +2,7 @@
 
 /* Q:1 */ void replaceChar(char *s, char oldChar, char newChar);
 /* Q:2 */ char *replaceCharCopy(char *s, char oldChar, char newChar,char *ns);
-
+/* Q:3 */ void removeChar(char *s, char c);
 
 // QUESTION NO : 1
 
@@ -51,6 +51,27 @@ while(*s!='\0'){
         ns++;
 
     }
+
+
+
+}
+
+// QUESTION NO : 3
+
+void removeChar(char *s, char c){
+
+int count;
+
+while(*s!='\0'){
+
+if(*s==c){
+
+count++;
+
+}
+
+}
+
 
 
 

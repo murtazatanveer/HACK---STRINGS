@@ -81,6 +81,30 @@ printf("\nAfter Replacement we get : %s",new_str);
 
 }
 
+// QUESTION NO : 3
+
+if(choice==3){
+
+int s;
+printf("\nHow many characters you want in your string : ");
+scanf("%d",&s);
+
+int size = s+1;
+
+char str[size];
+
+printf("\nEnter String : ");
+scanf("%s",&str);
+getchar();
+
+char c;
+printf("\nEnter Character you want to remove from \"%s\" : ",str);
+scanf("%c",&c);
+
+removeChar(str,c);
+
+
+}
 
 
 }
