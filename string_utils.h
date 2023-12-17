@@ -1,7 +1,7 @@
 #include<stdio.h>
 
 /* Q:1 */ void replaceChar(char *s, char oldChar, char newChar);
-/* Q:2 */ char * replaceCharCopy(char *s, char oldChar, char newChar);
+/* Q:2 */ char *replaceCharCopy(char *s, char oldChar, char newChar,char *ns);
 
 
 // QUESTION NO : 1
@@ -31,11 +31,27 @@ while ( ch != (s+1) ){
 
 }
 
-// QUESTION NO : 2
 
 }
 
-char * replaceCharCopy(char *s, char oldChar, char newChar){
+// QUESTION NO : 2
+
+char *replaceCharCopy(char *s, char oldChar, char newChar,char *ns){
+
+while(*s!='\0'){
+
+        if(*s==oldChar){
+
+            *s=newChar;
+            }
+
+        *ns=*s;
+
+        s++;
+        ns++;
+
+    }
+
 
 
 }

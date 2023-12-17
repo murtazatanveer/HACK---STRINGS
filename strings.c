@@ -71,10 +71,13 @@ getchar();
 printf("\nEnter Character you want to Place : ");
 scanf("%c",&newChar);
 
-char new_arr[size];
+char new_str[size];
 
+replaceCharCopy(str , oldChar, newChar,new_str);
 
-replaceCharCopy(str , oldChar, newChar);
+new_str[size-1]='\0';
+
+printf("\nAfter Replacement we get : %s",new_str);
 
 }
 
