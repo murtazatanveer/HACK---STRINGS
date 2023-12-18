@@ -1,4 +1,6 @@
 #include<stdio.h>
+#include<stdlib.h>
+#include<string.h>
 
 /* Q:1 */ void replaceChar(char *s, char oldChar, char newChar);
 /* Q:2 */ char *replaceCharCopy(char *s, char oldChar, char newChar,char *ns);
@@ -101,7 +103,33 @@ ptr++;
 char * removeCharCopy( char *s, char c){
 
 
+char *ptr=s;
 
+char *p;
 
+while(*s!='\0'){
+
+if(*s==c){
+
+*s=*(s+1);
+p=s+1;
+
+while( *p != '\0'){
+
+*p = *(p+1);
+p++;
+
+}
+
+}
+
+s++;
+}
+
+char *dynamic_str = (char * ) malloc(strlen(ptr) + 1);
+
+strcpy(dynamic_str,ptr);
+
+return dynamic_str;
 
 }

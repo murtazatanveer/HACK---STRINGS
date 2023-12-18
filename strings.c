@@ -2,6 +2,8 @@
 
 #include<stdio.h>
 #include "string_utils.h"
+#include<stdlib.h>
+#include<string.h>
 
 int main(){
 
@@ -128,6 +130,7 @@ scanf("%c",&c);
 
 char *ptr = removeCharCopy(str,c);
 
+printf("\nAfter Removing %c we get : %s",c,ptr);
 
 }
 
