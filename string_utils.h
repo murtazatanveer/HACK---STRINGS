@@ -3,6 +3,7 @@
 /* Q:1 */ void replaceChar(char *s, char oldChar, char newChar);
 /* Q:2 */ char *replaceCharCopy(char *s, char oldChar, char newChar,char *ns);
 /* Q:3 */ void removeChar(char *s, char c);
+/* Q:4 */char * removeCharCopy( char *s, char c);
 
 // QUESTION NO : 1
 
@@ -60,7 +61,6 @@ while(*s!='\0'){
 
 void removeChar(char *s, char c){
 
-int count=0;
 char *ptr=s;
 
 char *p;
@@ -92,6 +92,16 @@ printf("%c",*ptr);
 ptr++;
 
 }
+
+
+}
+
+// QUESTION NO : 4
+
+char * removeCharCopy( char *s, char c){
+
+
+
 
 
 }
