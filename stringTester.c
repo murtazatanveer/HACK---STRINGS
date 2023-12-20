@@ -60,7 +60,7 @@ char newChar='N';
 
 char *dyn_arr_ptr = replaceCharCopy(str , oldChar, newChar);
 
-printf("\nAfter Replace of %c with %c we get : %s",oldChar,newChar,dyn_arr_ptr);
+printf("\nAfter Replace of %c with %c in %s we get : %s",oldChar,newChar,str,dyn_arr_ptr);
 
  //TEST CASE:2
 
@@ -70,7 +70,7 @@ char str_2[8]="AOMSaTS";
 
 char *dyn_arr_ptr_2 = replaceCharCopy(str_2 , oldChar, newChar);
 
-printf("\nAfter Replace of %c with %c we get : %s",oldChar,newChar,dyn_arr_ptr_2);
+printf("\nAfter Replace of %c with %c in %s we get : %s",oldChar,newChar,str_2,dyn_arr_ptr_2);
 
  //TEST CASE:3
 
@@ -80,7 +80,7 @@ char str_3[12]="M__YE M__YE";
 
 char *dyn_arr_ptr_3 = replaceCharCopy(str_3 , oldChar, newChar);
 
-printf("\nAfter Replace of %c with %c we get : %s",oldChar,newChar,dyn_arr_ptr_3);
+printf("\nAfter Replace of %c with %c in %s we get : %s",oldChar,newChar,str_3,dyn_arr_ptr_3);
 
 }
 
@@ -88,23 +88,29 @@ printf("\nAfter Replace of %c with %c we get : %s",oldChar,newChar,dyn_arr_ptr_3
 
 if(choice==3){
 
-int s;
-printf("\nHow many characters you want in your string : ");
-scanf("%d",&s);
+//test case : 1
 
-int size = s+1;
+char str[9]="MURT_AZA";
 
-char str[size];
-
-printf("\nEnter String : ");
-scanf("%s",&str);
-getchar();
-
-char c;
-printf("\nEnter Character you want to remove from \"%s\" : ",str);
-scanf("%c",&c);
+char c='_';
 
 removeChar(str,c);
+
+//test case : 2
+
+char str_2[9]="COMSIATS";
+
+ c='I';
+
+removeChar(str_2,c);
+
+//test case : 3
+
+char str_3[7]="ABC_DE";
+
+ c='_';
+
+removeChar(str_3,c);
 
 
 }
@@ -113,25 +119,19 @@ removeChar(str,c);
 
 if(choice==4){
 
-int s;
-printf("\nHow many characters you want in your string : ");
-scanf("%d",&s);
 
-int size = s+1;
+char str[9]="MURT_AZA";
 
-char str[size];
+char str_2[9]="COMSIATS";
 
-printf("\nEnter String : ");
-scanf("%s",&str);
-getchar();
+char str_3[7]="ABC_DE";
 
+TEST CASE :1
 char c;
-printf("\nEnter Character you want to remove from \"%s\" : ",str);
-scanf("%c",&c);
 
 char *ptr = removeCharCopy(str,c);
 
-printf("\nAfter Removing %c we get : %s",c,ptr);
+printf("\nAfter Removing %c from %s we get : %s",c,str,ptr);
 
 }
 
