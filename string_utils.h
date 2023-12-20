@@ -3,7 +3,7 @@
 #include<string.h>
 
 /* Q:1 */ void replaceChar(char *s, char oldChar, char newChar);
-/* Q:2 */ char *replaceCharCopy(char *s, char oldChar, char newChar,char *ns);
+/* Q:2 */ char *replaceCharCopy(char *s, char oldChar, char newChar);
 /* Q:3 */ void removeChar(char *s, char c);
 /* Q:4 */char * removeCharCopy( char *s, char c);
 
@@ -39,7 +39,11 @@ while ( ch != (s+1) ){
 
 // QUESTION NO : 2
 
-char *replaceCharCopy(char *s, char oldChar, char newChar,char *ns){
+char *replaceCharCopy(char *s, char oldChar, char newChar){
+
+char *dyn_str = (char*) malloc(strlen(s)+ 1); 
+
+char *dyn_str_cpy=dyn_str;
 
 while(*s!='\0'){
 
@@ -48,14 +52,16 @@ while(*s!='\0'){
             *s=newChar;
             }
 
-        *ns=*s;
+        *dyn_str=*s;
 
         s++;
-        ns++;
+        dyn_str++;
 
     }
 
+    *dyn_str='\0';
 
+return dyn_str_cpy;
 
 }
 
