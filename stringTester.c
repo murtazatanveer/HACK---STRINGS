@@ -17,10 +17,10 @@ if (choice==1){
 
 printf("\nTest Case 1\n");
 
-char str[8]="MURTAZA";
+char str[8]="MURT_Z_";
 
-char oldChar='A';
-char newChar='_';
+char oldChar='_';
+char newChar='A';
 
 replaceChar(str , oldChar, newChar);
 
@@ -52,37 +52,35 @@ replaceChar(str_3 , oldChar, newChar);
 
 if (choice==2){
     
-int s;
-printf("\nHow many characters you want in your string : ");
-scanf("%d",&s);
+    //TEST CASE:1
 
-getchar();
-
-int size = s+1;
-
-char str[size];
-char oldChar;
-char newChar;
-
-printf("\nEnter Your String : ");
-scanf("%s",&str);
-
-getchar();
-
-printf("\nEnter Character you want to remove : ");
-scanf("%c",&oldChar);
-
-getchar();
-
-printf("\nEnter Character you want to Place : ");
-scanf("%c",&newChar);
-
-
+char str[8]="MOOP";
+char oldChar='P';
+char newChar='N';
 
 char *dyn_arr_ptr = replaceCharCopy(str , oldChar, newChar);
 
 printf("\nAfter Replace of %c with %c we get : %s",oldChar,newChar,dyn_arr_ptr);
 
+ //TEST CASE:2
+
+char str_2[8]="AOMSaTS";
+ oldChar='A';
+ newChar='C';
+
+char *dyn_arr_ptr_2 = replaceCharCopy(str_2 , oldChar, newChar);
+
+printf("\nAfter Replace of %c with %c we get : %s",oldChar,newChar,dyn_arr_ptr_2);
+
+ //TEST CASE:3
+
+char str_3[12]="M__YE M__YE";
+ oldChar='_';
+ newChar='O';
+
+char *dyn_arr_ptr_3 = replaceCharCopy(str_3 , oldChar, newChar);
+
+printf("\nAfter Replace of %c with %c we get : %s",oldChar,newChar,dyn_arr_ptr_3);
 
 }
 
