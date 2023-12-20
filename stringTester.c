@@ -60,7 +60,7 @@ char newChar='N';
 
 char *dyn_arr_ptr = replaceCharCopy(str , oldChar, newChar);
 
-printf("\nAfter Replace of %c with %c in %s we get : %s",oldChar,newChar,str,dyn_arr_ptr);
+printf("\nAfter Replace of %c with %c we get : %s",oldChar,newChar,dyn_arr_ptr);
 
  //TEST CASE:2
 
@@ -70,7 +70,7 @@ char str_2[8]="AOMSaTS";
 
 char *dyn_arr_ptr_2 = replaceCharCopy(str_2 , oldChar, newChar);
 
-printf("\nAfter Replace of %c with %c in %s we get : %s",oldChar,newChar,str_2,dyn_arr_ptr_2);
+printf("\nAfter Replace of %c with %c we get : %s",oldChar,newChar,dyn_arr_ptr_2);
 
  //TEST CASE:3
 
@@ -80,7 +80,7 @@ char str_3[12]="M__YE M__YE";
 
 char *dyn_arr_ptr_3 = replaceCharCopy(str_3 , oldChar, newChar);
 
-printf("\nAfter Replace of %c with %c in %s we get : %s",oldChar,newChar,str_3,dyn_arr_ptr_3);
+printf("\nAfter Replace of %c with %c in we get : %s",oldChar,newChar,dyn_arr_ptr_3);
 
 }
 
@@ -120,18 +120,34 @@ removeChar(str_3,c);
 if(choice==4){
 
 
+
+//TEST CASE :1
+
 char str[9]="MURT_AZA";
-
-char str_2[9]="COMSIATS";
-
-char str_3[7]="ABC_DE";
-
-TEST CASE :1
-char c;
+char c='_';
 
 char *ptr = removeCharCopy(str,c);
 
 printf("\nAfter Removing %c from %s we get : %s",c,str,ptr);
+
+//TEST CASE :2
+
+char str_2[9]="COMSIATS";
+ c='I';
+
+char *ptr_2 = removeCharCopy(str_2,c);
+
+printf("\nAfter Removing %c from %s we get : %s",c,str_2,ptr_2);
+
+//TEST CASE :3
+
+char str_3[7]="ABC_DE";
+
+ c='_';
+
+char *ptr_3 = removeCharCopy(str_3,c);
+
+printf("\nAfter Removing %c from %s we get : %s",c,str_3,ptr_3);
 
 }
 
