@@ -1,5 +1,3 @@
-// HACK STRINGS EXERCISES QUESTIONS
-
 #include<stdio.h>
 #include "string_utils.h"
 #include<stdlib.h>
@@ -14,33 +12,39 @@ scanf("%d",&choice);
 // QUESTION NO : 1
 
 if (choice==1){
-    
-int s;
-printf("\nHow many characters you want in your string : ");
-scanf("%d",&s);
+   
+// Test Case 1
 
-getchar();
+printf("\nTest Case 1\n");
 
-int size = s+1;
+char str[8]="MURTAZA";
 
-char str[size];
-char oldChar;
-char newChar;
-
-printf("\nEnter Your String : ");
-scanf("%s",&str);
-
-getchar();
-
-printf("\nEnter Character you want to remove : ");
-scanf("%c",&oldChar);
-
-getchar();
-
-printf("\nEnter Character you want to Place : ");
-scanf("%c",&newChar);
+char oldChar='A';
+char newChar='_';
 
 replaceChar(str , oldChar, newChar);
+
+// Test Case 2
+
+printf("\nTest Case 2\n");
+
+char str_2[8]="AOMSaTS";
+
+oldChar='A';
+newChar='C';
+
+replaceChar(str_2 , oldChar, newChar);
+
+// Test Case 3
+
+printf("\nTest Case 3\n");
+
+char str_3[12]="M__YE M__YE";
+
+oldChar='_';
+newChar='O';
+
+replaceChar(str_3 , oldChar, newChar);
 
 }
 
