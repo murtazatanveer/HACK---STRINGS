@@ -155,6 +155,33 @@ printf("\nAfter Removing %c from %s we get : %s",c,str_3,ptr_3);
 
 if(choice==5){
 
+//test case : 1
+
+char s [9] = "ABCDEFGH";
+
+int n = 3;
+
+char **ch_ptr = lengthSplit(s,n);
+
+
+int j;
+
+for( int i=0;i<n;i++){
+
+    if(i==(n-1) && j==(n-1)){
+    break;
+ }
+
+    printf("\"");
+    for( j=0;j<n;j++){
+
+printf("%c",ch_ptr[i][j]);
+
+}
+ printf("\" ");
+
+
+}
 
 
 }

@@ -164,17 +164,20 @@ for(int j=0;j<n;j++){
 ptrs_ch[i][j] = *s;
 s++;
 
+
+
+}
 if(*s=='\0'){
 
+break;
+
+
+}
+
+}
+
+ptrs_ch[n-1][n-1]='\0';
 
 return ptrs_ch;
-
-}
-
-}
-
-}
-
-
 
 }
