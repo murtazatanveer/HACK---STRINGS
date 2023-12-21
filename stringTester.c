@@ -151,5 +151,15 @@ printf("\nAfter Removing %c from %s we get : %s",c,str_3,ptr_3);
 
 }
 
+// QUESTION NO : 5
+
+if(choice==5){
+
+
 
 }
+
+
+}
+
+

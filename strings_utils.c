@@ -138,3 +138,43 @@ strcpy(dynamic_str,ptr);
 return dynamic_str;
 
 }
+
+// QUESTION NO : 5
+
+char **lengthSplit(const char *s, int n){
+
+    int size = (strlen(s)+1)/n;
+
+    if((strlen(s)+1) % n != 0){
+
+size++;
+
+    }
+
+    
+
+char **ptrs_ch = (char**) malloc(sizeof(char*) * size);
+
+for(int i=0;i<size;i++){
+
+ptrs_ch[i] = (char*) malloc(n);
+
+for(int j=0;j<n;j++){
+
+ptrs_ch[i][j] = *s;
+s++;
+
+if(*s=='\0'){
+
+
+return ptrs_ch;
+
+}
+
+}
+
+}
+
+
+
+}
